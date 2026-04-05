@@ -1,0 +1,49 @@
+Kashika +91-8708372294
+kashika1949.be23@chitkara.edu.in GitHub Profile
+Computer Science and Engineering | Chitkara University, Rajpura LinkedIn Profile
+Professional Summary
+Software developer with enterprise application development experience gained during an Infosys internship,
+building role-based healthcare modules . Strong foundation in object-oriented programming, modular
+architecture, and Agile collaboration using Swift, Java, and JavaScript. Developed and published a role-based
+university event management iOS application (ClubHub) on the App Store and interested in scalable
+enterprise applications, workflow automation, and system integration platforms.
+Education
+•Bachelor of Vishvas Public School Vishvas Public School Experience
+• Software Developer Intern (iOS) – Infosys Limited, Mysore Dec 2025 - Jan 2026
+– Developed role-based modules for Admin, Patient, Doctor, and Lab Technician users within an enterprise-level
+Hospital Management System.
+– Implemented REST API–driven UI workflows supporting AI-based healthcare chatbot interactions.
+– Collaborated with backend teams to validate JSON responses and integration logic.
+– Worked in Agile sprint cycles using Jira and Git version control.
+– Applied MVVM architecture principles for scalable and maintainable application structure.
+Technical Skills
+Programming Languages: Java, Swift, JavaScript, Python
+Core Concepts: Object-Oriented Programming, Data Structures & Algorithms, DBMS, Operating Systems, Software
+Engineering
+API & Integration: REST APIs, JSON Handling, Client–Server Architecture, HTTP Protocol Basics
+Frameworks & Tools: SwiftUI, ReactJS, Git, GitHub, Jira, VS Code
+Cloud/Databases: MySQL, Basic AWS Exposure
+Architecture: MVVM Architecture, Role-Based Workflow Design, Modular UI Development
+Enterprise Exposure: Agile Sprint Collaboration, Version Control Workflows, Integration-Oriented Development
+Areas of Interest: Enterprise Application Development, System Integration, Cloud-Based Platforms
+Projects
+•ClubHub – University Club Event Management iOS Application
+Swift | SwiftUI | MVVM Architecture
+– Designed role-based navigation workflows for students and club administrators.
+– Event lifecycle management and structured user interaction flows.
+– Applied MVVM architecture to improve scalability and maintainability of UI components.
+– Developed reusable modules supporting feature expansion and Integrated WidgetKit, MapKit, and EventKit to
+enhance event tracking, reminders, and location-based navigation features.
+–
+– Published the application on the Apple App Store demonstrating end-to-end deployment and release lifecycle
+management.
+•Voyager – Hotel Booking Web Application
+React | JavaScript | REST APIs
+– Implemented structured booking workflows aligned with REST-based service architecture.
+– Designed modular frontend components for scalable user interaction handling.
+– Improved usability through structured UI/UX workflow planning.
+•Docker Manager UI – Linux Utility Interface
+React | Docker | Linux
+– Built interface components for monitoring container workflows in a Linux environment.
+– Designed modular UI structure supporting system-level interaction visibility.
+– Implemented structured layouts for container status tracking and management.
