@@ -1,7 +1,9 @@
+import Image from "next/image";
+
 const contact = {
   email: "kashika1949.be23@chitkara.edu.in",
   phone: "+91-8708372294",
-  github: "https://github.com",
+  github: "https://github.com/KashikaaBaweja",
   linkedin: "https://linkedin.com",
 };
 
@@ -224,6 +226,39 @@ export default function Home() {
                 "Layouts for container status tracking and management.",
               ]}
             />
+            <ProjectCard
+              title="EMS (EMS Store)"
+              subtitle="Full-stack e-commerce · Next.js · Prisma · PostgreSQL · NextAuth · Tailwind CSS"
+              bullets={[
+                "Production-style storefront with catalog, categories, cart, checkout, and order flows.",
+                "PostgreSQL + Prisma data layer; authenticated sessions via NextAuth.",
+                "Admin tooling for inventory and operations; editorial UI with seeded demo products.",
+                "Deployed on Vercel with structured build and database migration workflow.",
+              ]}
+              image={{
+                src: "/projects/ems.png",
+                alt: "EMS Store storefront hero and featured products",
+              }}
+              links={[
+                { label: "Live demo", href: "https://ems-plum-nine.vercel.app" },
+                { label: "GitHub", href: "https://github.com/KashikaaBaweja/EMS" },
+              ]}
+            />
+            <ProjectCard
+              title="RAG"
+              subtitle="Retrieval-augmented QA · Turbo monorepo · Next.js · LangChain · Pinecone"
+              bullets={[
+                "pnpm/Turbo workspace with web app and background worker for ingestion and retrieval.",
+                "LangChain + OpenAI for generation; Pinecone for vector search; documents via S3.",
+                "Job pipeline using BullMQ and Redis; Prisma for app data; Docker Compose for local stacks.",
+                "Automated testing with Vitest, Playwright e2e, and observability hooks (e.g. Langfuse, metrics).",
+              ]}
+              image={{
+                src: "/projects/rag.png",
+                alt: "RAG monorepo on GitHub",
+              }}
+              links={[{ label: "GitHub", href: "https://github.com/KashikaaBaweja/RAG" }]}
+            />
           </ul>
         </section>
       </main>
@@ -248,13 +283,28 @@ function ProjectCard({
   title,
   subtitle,
   bullets,
+  image,
+  links,
 }: {
   title: string;
   subtitle: string;
   bullets: string[];
+  image?: { src: string; alt: string };
+  links?: { label: string; href: string }[];
 }) {
   return (
     <li>
+      {image ? (
+        <div className="relative mb-4 aspect-video w-full overflow-hidden rounded-lg border border-neutral-200 bg-neutral-100 dark:border-neutral-800 dark:bg-neutral-900">
+          <Image
+            src={image.src}
+            alt={image.alt}
+            fill
+            className="object-cover object-top"
+            sizes="(max-width: 768px) 100vw, 42rem"
+          />
+        </div>
+      ) : null}
       <h3 className="text-lg font-semibold">{title}</h3>
       <p className="mt-1 text-sm text-neutral-500 dark:text-neutral-400">
         {subtitle}
@@ -264,6 +314,22 @@ function ProjectCard({
           <li key={b}>{b}</li>
         ))}
       </ul>
+      {links && links.length > 0 ? (
+        <ul className="mt-4 flex flex-wrap gap-3 text-sm">
+          {links.map((l) => (
+            <li key={l.href}>
+              <a
+                href={l.href}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="font-medium text-neutral-700 underline-offset-4 transition-colors hover:text-[var(--foreground)] hover:underline dark:text-neutral-300"
+              >
+                {l.label}
+              </a>
+            </li>
+          ))}
+        </ul>
+      ) : null}
     </li>
   );
 }
